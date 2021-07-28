@@ -1,7 +1,8 @@
+import css from '@emotion/css';
 import styled from '@emotion/styled';
 import { COLOR, Z_INDEX } from 'src/constants';
 
-const Nav = styled.nav`
+const Nav = styled.nav<{ keyboardUp: boolean }>`
   max-width: 100%;
   min-width: 100%;
 
@@ -12,6 +13,12 @@ const Nav = styled.nav`
   bottom: 0;
   left: 0;
   z-index: ${Z_INDEX.TAB_BAR};
+
+  ${({ keyboardUp }) =>
+    keyboardUp &&
+    css`
+      display: none;
+    `}
 
   ul {
     display: flex;
