@@ -21,6 +21,7 @@ const Button = styled.button<Omit<ArrowButtonStyle, 'translate'>>`
   ${({ fontSize }) => fontSize && `font-size:  ${fontSize}`};
   padding: 0 0.6rem;
   color: inherit;
+  height: 100%;
 
   &:after {
     content: '';
