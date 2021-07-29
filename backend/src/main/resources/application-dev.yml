@@ -3,3 +3,9 @@ logging:
     root: warn
 file-server:
   url: https://dmaxaug2ve9od.cloudfront.net
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:13306/jujeol?useSSL=true
+    username: root
+    password: root

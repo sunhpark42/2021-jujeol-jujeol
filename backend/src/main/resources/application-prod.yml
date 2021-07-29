@@ -1,5 +1,13 @@
-logging:
-  level:
-    root: warn
 file-server:
   url: https://dmaxaug2ve9od.cloudfront.net
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:13306/jujeol?useSSL=true
+    username: root
+    password: root
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
+    show-sql: true

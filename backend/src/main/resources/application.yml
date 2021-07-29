@@ -9,9 +9,9 @@ spring:
       add-mappings: false
   profiles:
     group:
-      "local": "console-logging,http-console-logging"
-      "dev": "file-logging,http-file-logging"
-      "prod": "file-logging,http-file-logging"
+#      "local": "console-logging,http-console-logging"
+#      "dev": "file-logging,http-file-logging,console-logging"
+#      "prod": "file-logging,http-file-logging,console-logging"
       "test": "console-logging"
     include: oauth
   data:
