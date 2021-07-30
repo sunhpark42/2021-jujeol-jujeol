@@ -22,7 +22,7 @@ describe('사용자는 홈 화면에서 주류 목록을 조회할 수 있다.',
 
   it('사용자는 홈 화면에서 주류 목록을 조회할 수 있다.', async () => {
     const recommendationSectionHeader = screen.getByRole('heading', {
-      name: /오늘 이런 술 어때요\?/i,
+      name: /오늘 이런 술 어때요호호호호호호\?/i,
     });
     const recommendationSection = recommendationSectionHeader.closest('section');
     const viewAllSectionHeader = screen.getByRole('heading', {
