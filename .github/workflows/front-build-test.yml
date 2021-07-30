@@ -14,8 +14,8 @@ defaults:
 jobs:
   build:
     # label이 [front] (id: 3141723409) 일때만 동작
-    if: contains(github.event.pull_request.labels.*.id, 3141723409)
-    runs-on: deploy-runner
+    # if: contains(github.event.pull_request.labels.*.id, 3141723409)
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
