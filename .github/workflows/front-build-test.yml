@@ -5,7 +5,7 @@ on:
   pull_request:
     branches:
       - develop # develop 브랜치에서 pr 이벤트가 일어났을 때 실행
-    types: [created, edited] # PR이 생성 및 수정되었을 때 실행
+    types: [published, created, edited] # PR이 생성 및 수정되었을 때 실행
 
 defaults:
   run:
